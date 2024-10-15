@@ -1,5 +1,5 @@
 module "mysql_sg" {
-    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=main"
+    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=master"
     project_name = var.project_name
     environment = var.environment
     sg_name = "mysql"
@@ -9,7 +9,7 @@ module "mysql_sg" {
 }
 
 module "backend_sg" {
-    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=main"
+    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=master"
     project_name = var.project_name
     environment = var.environment
     sg_name = "backend"
@@ -19,7 +19,7 @@ module "backend_sg" {
 }
 
 module "frontend_sg" {
-    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=main"
+    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=master"
     project_name = var.project_name
     environment = var.environment
     sg_name = "frontend"
@@ -28,7 +28,7 @@ module "frontend_sg" {
     sg_tags = var.frontend_sg_tags
 }
 module "bastion_sg" {
-    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=main"
+    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=master"
     project_name = var.project_name
     environment = var.environment
     sg_name = "bastion"
@@ -37,7 +37,7 @@ module "bastion_sg" {
     sg_tags = var.bastion_sg_tags
 }
 module "ansible_sg" {
-    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=main"
+    source = "git::https://github.com/sathishbellala36/terraform-aws-security-group.git?ref=master"
     project_name = var.project_name
     environment = var.environment
     sg_name = "ansible"
