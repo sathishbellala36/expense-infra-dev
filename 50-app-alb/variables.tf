@@ -19,7 +19,7 @@ variable "common_tags" {
 }
 variable "app_alb_tags" {
     default = {
-       component = "app_alb"
+       component = "app-alb"
     } 
 }
 
