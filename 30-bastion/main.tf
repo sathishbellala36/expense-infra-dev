@@ -1,5 +1,3 @@
-
-
 module "bastion" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
